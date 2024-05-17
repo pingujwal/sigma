@@ -27,6 +27,7 @@ detection:
             - '/RU'
             - 'SYSTEM'
             - '\Microsoft\Windows\WinSrv'
+            - '/TR'
         CommandLine|contains:
             - 'servtask.bat'
             - 'execute.bat'
@@ -36,6 +37,7 @@ detection:
         CommandLine|contains|all:
             - 'Delete'
             - '/F '
+            - '/TN'
             - '\Microsoft\Windows\WinSrv'
     selection_powershell:
         CommandLine|contains|all:
